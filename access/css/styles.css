@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #f2726f;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #b5ead7, #8cd5bf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
+
+.card {
+    height: 520px;
+    width: 335px;
+    background: #242628;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+.card-box-head {
+    width: 340px;
+    height: 130px;
+    background-color: var(--primary-color);
+    z-index: 0;
+    position: absolute;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.card-img {
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    border: 4px solid white;
+    border-radius: 50%;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateY(63px);
+    transition: 0.5s;
+}
+
+.card-name, .card-career {
+    font-family: "Poppins";
+    color: #f2726f;
+    text-align: center;
+}
+
+.card-name {
+    margin-top: 60px;
+    font-size: 20px;
+    color: white
+}
+
+.card-career {
+    font-size: 12px;
+}
+.card-language {
+    align-items: center;
+    margin: 20px auto;
+}
+.card-language-cpp,
+.card-language-html,
+.card-language-css,
+.card-language-js {
+    color: white;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 30px;
+    margin: 20px 20px;
+    transition: 0.5s;
+}
+
+.card button {
+    padding: 10px 16px;
+    border: 2px solid var(--primary-color);
+    background: #242628;
+    border-radius: 4px;
+    color: white;
+}
+
+.card button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.card-img:hover {
+    width: 100%;
+    height: 100%;
+    transform: unset;
+    border-radius: unset;
+    border: unset;
+    border-radius: 15px;
+    z-index: ;
+    position: unset;
+    margin-top: unset;
+
+}
+
+.card-language-cpp:hover,
+.card-language-html:hover,
+.card-language-css:hover,
+.card-language-js:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.card-language-cpp:hover {
+    color: #1153d6;
+}
+
+.card-language-html:hover {
+    color: #f59343;
+}
+
+.card-language-css:hover {
+    color: #588efb;
+} 
+
+.card-language-js:hover {
+    color: #f2f752;
+}
